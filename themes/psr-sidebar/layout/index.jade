@@ -1,0 +1,38 @@
+extends _inc/layout
+
+block title
+  title config.title
+
+block description
+  meta(name='description', content=config.description)
+
+block extralinks
+  link(rel='stylesheet', href='/stylesheets/home.css')
+
+include mixins/projectList
+
+block content
+  .outer
+    .sidebar
+      .cover#leftCover
+        .vertical-center
+          .container
+            .row
+              img.media-object.img-circle#me(src="/images/me.jpg")
+              h1#name #{config.title}
+              p#info !{config.subtitle}
+              ul.list-inline
+                li
+                  a(href="https://github.com/rajpurkar")
+                    i.fa.fa-github
+                li
+                  a(href="https://twitter.com/pranavrajpurkar")
+                    i.fa.fa-twitter
+                li
+                  a(href="http://dblp.uni-trier.de/pers/hd/r/Rajpurkar:Pranav")
+                    i.fa.fa-newspaper-o
+    .contentbar
+      .cover#rightCover
+        .col-lg-8.col-lg-offset-1.col-md-9.col-md-offset-1.col-sm-10.col-sm-offset-1
+          .extra-padding
+            +projectList(site.posts.sort('importance', 'desc').toArray()) 

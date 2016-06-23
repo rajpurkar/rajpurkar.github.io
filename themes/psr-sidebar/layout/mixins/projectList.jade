@@ -1,0 +1,18 @@
+mixin projectList(projects)
+  each p in projects
+    .project
+      h1.title #{p.title} 
+      p.info
+        -var start = moment(new Date(p.start)).fromNow(true)
+        if !p.end
+          | Active project for #{start}
+        else
+          - var end = moment(new Date(p.end)).format('MMM YYYY')
+          | From #{start} up to #{end}
+        |  with #{p.collaborators}
+      p.projectDescription #{p.description}
+      if p.links
+        ul.list-inline
+          each link in p.links
+            li
+              a.btn.actionBtn.inverseBtn.link(href=link.href) #{link.text}
