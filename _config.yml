@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
+title: Pranav Rajpurkar
+subtitle: PhD student in Computer Science<br/>@ Stanford University
+description: I am Pranav Rajpurkar, a PhD student in Computer Science at Stanford University. Here I share some of my ongoing and past intellectual endeavors in research, and more.
+author: Pranav Rajpurkar
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://pranavrajpurkar.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -63,11 +63,14 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: psr-sidebar
+exclude_generator: ['tag', 'category']
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: git@github.com:rajpurkar/rajpurkar.github.io.git
-  branch: gh-pages
+  branch: master
+
+google-analytics: UA-57891428-1
