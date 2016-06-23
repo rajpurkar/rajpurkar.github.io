@@ -7,7 +7,7 @@ end:           Mon Dec 15 2014 00:00:00 GMT+0400 (GST)
 links: 
   - 
     text: Paper (SURJ '15)
-    href: http://surj.stanford.edu/journal-archives-2/
+    href: /files/GirardeauMigimatsuRajpurkar-ASupervisedApproachToChordRecognitionFinal.pdf
 group:         research
 importance:    3
 ---
