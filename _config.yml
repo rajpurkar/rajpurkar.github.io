@@ -73,4 +73,4 @@ deploy:
   repo: git@github.com:rajpurkar/rajpurkar.github.io.git
   branch: master
 
-google-analytics: UA-57891428-1
+google_analytics: UA-57891428-1
