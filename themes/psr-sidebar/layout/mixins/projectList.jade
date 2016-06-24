@@ -3,10 +3,11 @@ mixin projectList(projects)
     .project
       h1.title #{p.title} 
       p.info
-        -var start = moment(new Date(p.start)).fromNow(true)
         if !p.end
+          - var start = moment(new Date(p.start)).fromNow(true)
           | Active project for #{start}
         else
+          - var start = moment(new Date(p.start)).format('MMM YYYY')
           - var end = moment(new Date(p.end)).format('MMM YYYY')
           | From #{start} up to #{end}
         |  with #{p.collaborators}
