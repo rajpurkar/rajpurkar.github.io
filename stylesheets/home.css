@@ -1,0 +1,89 @@
+.project {
+  padding: 10px 0px;
+}
+.project .title {
+  font-size: 2em;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+}
+.project .info {
+  color: #999;
+  font-size: 1.3em;
+}
+.project .projectDescription {
+  padding: 10px 0px;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: #555;
+}
+.project .link {
+  font-size: 1em;
+  margin: 5px 0px;
+}
+.thought {
+  border-bottom: 6px solid #eee;
+}
+.thought .title {
+  text-transform: capitalize;
+}
+.thought .source {
+  font-size: 0.9em;
+  color: #999;
+}
+.thought .thoughtContent {
+  margin: 1em 0;
+  font-size: 1.1em;
+}
+.thought .list-inline > li > p {
+  color: #999;
+  font-size: 0.8em;
+}
+#rightCover {
+  background-color: #fff;
+  display: block;
+}
+#rightCover .extra-padding {
+  padding: 20px 30px;
+}
+#rightCover .groupTitle {
+  font-weight: 300;
+  color: #666;
+}
+.sidebar #leftCover {
+  padding: 0px;
+  background-color: #f5f5f5;
+}
+.sidebar #leftCover #name {
+  color: #666;
+  font-weight: 400;
+  font-size: 2.7em;
+  padding-top: 5px;
+  text-transform: lowercase;
+}
+.sidebar #leftCover #info {
+  padding: 5px 10px;
+  color: #666;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.sidebar #leftCover ul.list-inline {
+  margin-top: 15px;
+}
+.sidebar #leftCover ul.list-inline li a {
+  transition: all 0.5s;
+  color: #666;
+}
+.sidebar #leftCover ul.list-inline li a i.fa {
+  font-size: 2em;
+}
+.sidebar #leftCover ul.list-inline li a:hover {
+  color: #2b92e8;
+}
+.sidebar #leftCover img#me {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 230px;
+}
