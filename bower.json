@@ -15,7 +15,7 @@
     "test",
     "tests"
   ],
-  "devDependencies": {
+  "dependencies": {
     "bootstrap": "^3.3.7",
     "lato-webfont": "^1.1.2",
     "jquery": "^3.1.0",
