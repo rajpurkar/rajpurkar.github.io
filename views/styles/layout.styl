@@ -3,22 +3,16 @@
 @require 'layout/errorMessage'
 @require 'layout/cover'
 @require 'layout/button'
-@require 'layout/infoCard'
 @require 'layout/sidebar'
 
 html,
 body
+  font-family 'Lato', Arial, sans-serif
   width 100%
   height 100%
-
-body
-  letter-spacing 0.005em
-
-body, h1, h2, h3, h4, h5, p, li, a
-  font-family 'Lato', Arial, sans-serif
   font-weight 400
 
-p
+h3, p
   margin 0px
 
 body
@@ -44,3 +38,17 @@ hr
 @media(max-width: 768px)
   [class*='col-']
     padding 0px 0px
+
+h2
+  font-size 2em
+  border-bottom 1px solid #ddd
+  color #555
+h3
+  color #999
+  font-size 1.3em
+p
+  padding 10px 0px
+  font-size 1.3em
+  line-height 1.5em
+  font-weight 400
+  color #555

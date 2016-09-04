@@ -1,8 +1,8 @@
 mixin projectList(projects)
   each p in projects
     .project
-      h1.title #{p.title} 
-      p.info
+      h2 #{p.title} 
+      h3
         if !p.end
           - var start = moment(new Date(p.start)).fromNow(true)
           | Active project for #{start}
@@ -11,9 +11,9 @@ mixin projectList(projects)
           - var end = moment(new Date(p.end)).format('MMM YYYY')
           | From #{start} up to #{end}
         |  with #{p.collaborators}
-      p.projectDescription #{p.description}
+      p #{p.description}
       if p.links
         ul.list-inline
           each link in p.links
             li
-              a.btn.actionBtn.inverseBtn.link(href=link.href) #{link.text}
+              a.btn.actionBtn.inverseBtn(href=link.href) #{link.text}

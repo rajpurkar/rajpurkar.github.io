@@ -1,0 +1,6 @@
+mixin writingList(writing)
+  each w in writings
+    .writing
+      h2 #{w.title} 
+      h3 #{moment(new Date(w.start)).format('MMM YYYY')}
+      p !{w.body}

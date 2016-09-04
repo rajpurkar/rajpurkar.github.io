@@ -7,9 +7,10 @@ block description
   meta(name='description', content='I am Pranav Rajpurkar, a PhD student in Computer Science at Stanford University. Here I share some of my ongoing and past intellectual endeavors in research, and more.')
 
 block extralinks
-  link(rel='stylesheet', href='/stylesheets/home.css')
+  link(rel='stylesheet', href='/stylesheets/index.css')
 
 include mixins/projectList
+include mixins/writingList
 
 block content
   .outer
@@ -19,9 +20,16 @@ block content
           .container
             .row
               img.media-object.img-circle#me(src="/images/me.jpg")
-              h1#name Pranav Rajpurkar
-              p#info PhD student in Computer Science<br/>@ Stanford University
-              ul.list-inline
+              h1 Pranav Rajpurkar
+              h3 PhD student in Computer Science<br/>@ Stanford University
+              ul.list-unstyled.inside-links
+                li(class= projects ? "active" : "")
+                  a(href='/projects').btn.actionBtn.inverseBtn
+                    | Projects
+                li(class= writings ? "active" : "")
+                  a(href='/writings').btn.actionBtn.inverseBtn
+                    | Writings
+              ul.list-inline.outside-links
                 li
                   a(href="https://github.com/rajpurkar")
                     i.fa.fa-github
@@ -35,4 +43,7 @@ block content
       .cover#rightCover
         .col-lg-8.col-lg-offset-1.col-md-9.col-md-offset-1.col-sm-10.col-sm-offset-1
           .extra-padding
-            +projectList(projects) 
+            if projects
+              +projectList(projects)
+            if writings
+              +writingList(writings)
