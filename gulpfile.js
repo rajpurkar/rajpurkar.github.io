@@ -59,7 +59,7 @@ gulp.task('css', () => {
 
 gulp.task('deploy', () => {
   return gulp.src(build_dir + '**/*')
-    .pipe(ghPages())
+    .pipe(ghPages({branch: 'master'}))
 })
 
 gulp.task('default', ['bower', 'markdown', 'pug', 'css', 'copy_public'])
