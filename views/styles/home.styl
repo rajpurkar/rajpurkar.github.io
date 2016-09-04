@@ -1,0 +1,44 @@
+@require 'layout/theme'
+@require 'app/project'
+@require 'app/thought'
+
+#rightCover
+  background-color: #fff
+  display block
+  .extra-padding
+    padding 20px 30px
+  .groupTitle
+    font-weight 300
+    color #666
+
+.sidebar
+  #leftCover
+    padding 0px
+    background-color #f5f5f5
+    #name
+      color #666
+      font-weight 400
+      font-size 2.7em
+      padding-top 5px
+      text-transform lowercase
+    #info
+      padding 5px 10px
+      color #666
+      font-size 1.2em
+      font-weight 400
+    ul.list-inline
+      margin-top 15px
+      li
+        a
+          transition all 0.5s
+          color #666
+          i.fa
+            font-size 2em
+        a:hover
+          color $theme-color
+    img#me
+      display block
+      margin-left auto
+      margin-right auto
+      width 100%
+      max-width 230px

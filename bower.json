@@ -1,10 +1,13 @@
-``{
-  "name": "homepage",
-  "version": "5.0.0",
+{
+  "name": "personal",
+  "description": "",
+  "main": "gulpfile.js",
   "authors": [
     "Pranav Rajpurkar <pranav.rajpurkar@gmail.com>"
   ],
   "license": "MIT",
+  "homepage": "https://github.com/rajpurkar/rajpurkar.github.io",
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -12,11 +15,10 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "bootstrap": "~3.3.5",
-    "font-awesome": "~4.5.0",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
     "lato-webfont": "^1.1.2",
-    "jquery": "~2.1.4",
-    "trianglify": "~0.3.1"
+    "jquery": "^3.1.0",
+    "font-awesome": "^4.6.3"
   }
 }
