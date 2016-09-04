@@ -1,52 +1,62 @@
 @require 'layout/theme'
 
-.project, .writing
-  padding 10px 0px
-  ul.list-inline
-    li
-      a
-        font-size 1em
-        margin 5px 0px
+#headingCover
+  background-color $theme-color
+  min-height 180px
+  display block
+  h2, h3
+    color #fff
+  h2
+    font-size 4em
+    border-bottom none
+  h3
+    font-size 1.5em
+    
 
 #rightCover
-  background-color: #fff
+  background-color #fff
   display block
   .extra-padding
     padding 20px 30px
-  .groupTitle
-    font-weight 300
-    color #666
+  .project, .writing
+    padding 10px 0px
+    ul.list-inline
+      li
+        a
+          font-size 1em
+          margin 5px 0px
 
-.sidebar
-  #leftCover
-    padding 0px
-    background-color #f5f5f5
-    .inside-links
-      margin-top 10px
-      li.active a, li a:hover
-        background-color #ccc
-        color white !important
-        box-shadow 2px 2px 0px 1px #bbb inset
-      li
-        a
-          border 1px solid #bbb
-          font-size 1.4em
-          max-width 200px
-          margin 5px auto
-          color #999 !important
-    .outside-links
-      margin-top 10px
-      li
-        a
-          transition all 0.5s
-          color #666
-          i.fa
-            font-size 2em
-        a:hover
-          color $theme-color
-    img#me
-      display block
-      margin-left auto
-      margin-right auto
-      width 100%
-      max-width 200px
+#leftCover
+  padding 0px
+  background-color #f5f5f5
+  .inside-links
+    margin 15px
+    li.active a, li a:hover
+      background-color $theme-color
+      color white !important
+      outline none
+    li
+      a
+        border-radius 0px
+        background none
+        border none
+        outline 1px solid #aaa
+        font-size 1.4em
+        max-width 200px
+        margin 5px auto
+        color #999 !important
+  .outside-links
+    li
+      a
+        transition all 0.5s
+        color #666
+        i.fa
+          font-size 2em
+      a:hover
+        color #333
+  img#me
+    display block
+    margin-left auto
+    margin-right auto
+    width 100%
+    max-width 200px

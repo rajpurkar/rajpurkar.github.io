@@ -4,7 +4,7 @@ block title
   title Pranav Rajpurkar
 
 block description
-  meta(name='description', content='I am Pranav Rajpurkar, a PhD student in Computer Science at Stanford University. Here I share some of my ongoing and past intellectual endeavors in research, and more.')
+  meta(name='description', content='I\'m Pranav Rajpurkar, a PhD student in Stanford\'s Computer Science department. Here I share some of my projects and writings.')
 
 block extralinks
   link(rel='stylesheet', href='/stylesheets/index.css')
@@ -40,10 +40,17 @@ block content
                   a(href="http://dblp.uni-trier.de/pers/hd/r/Rajpurkar:Pranav")
                     i.fa.fa-newspaper-o
     .contentbar
+      .cover#headingCover
+        .col-lg-8.col-lg-offset-1.col-md-9.col-md-offset-1.col-sm-10.col-sm-offset-1
+          if projects
+            h2 Projects
+            h3 AI+ Research and App Development
+          if writings
+            h2 Writings
+            h3 Poetic Musings
       .cover#rightCover
         .col-lg-8.col-lg-offset-1.col-md-9.col-md-offset-1.col-sm-10.col-sm-offset-1
-          .extra-padding
-            if projects
-              +projectList(projects)
-            if writings
-              +writingList(writings)
+          if projects
+            +projectList(projects)
+          if writings
+            +writingList(writings)
