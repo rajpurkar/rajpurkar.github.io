@@ -22,13 +22,10 @@ block content
               img.media-object.img-circle#me(src="/images/me.jpg")
               h1 Pranav Rajpurkar
               h3 PhD student in Computer Science<br/>@ Stanford University
-              ul.list-unstyled.inside-links
-                li(class= projects ? "active" : "")
+              if writings
+                ul.list-unstyled.inside-links
                   a(href='/projects').btn.actionBtn.inverseBtn
                     | Projects
-                li(class= writings ? "active" : "")
-                  a(href='/writings').btn.actionBtn.inverseBtn
-                    | Writings
               ul.list-inline.outside-links
                 li
                   a(href="https://github.com/rajpurkar")
