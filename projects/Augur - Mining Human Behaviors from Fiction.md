@@ -6,7 +6,7 @@ start:         Sun Jun 01 2014 00:00:00 GMT+0400 (GST)
 end:           Mon Sep 01 2014 00:00:00 GMT+0400 (GST)
 links: 
   - 
-    text: Paper (CHI'16)
+    text: Paper (CHI 2016) (Best Paper Honorable Mention)
     href: http://arxiv.org/abs/1602.06977
   - 
     text: Press (The Globe and Mail)
