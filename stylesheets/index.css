@@ -1,5 +1,5 @@
 #headingCover {
-  background-color: #3985d5;
+  background-color: #4a4a4a;
   min-height: 180px;
   display: block;
 }
@@ -52,6 +52,9 @@
   max-width: 200px;
   margin: 5px auto;
   color: #999 !important;
+}
+#leftCover .outside-links {
+  margin-top: 5px;
 }
 #leftCover .outside-links li a {
   transition: all 0.5s;
