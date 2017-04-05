@@ -1,5 +1,5 @@
 ---
-title: Augur - Mining Human Behavior from Fiction
+title: Augur
 description:   Research in Human Computer Interaction, and Natural Language Processing, exploring how we could teach a computer enough about human actions to enable predictive application interfaces that could, for example, recommend ice cream shops upon learning that a person was having dinner.
 collaborators: Ethan Fast and Professor Michael Bernstein
 start:         Sun Jun 01 2014 00:00:00 GMT+0400 (GST)

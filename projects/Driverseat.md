@@ -1,6 +1,6 @@
 ---
-title:         Driverseat & Research in Autonomous Driving
-description:   Research spanning Computer Vision, Artificial Intelligence, and Crowdsourcing. My undergraduate honors research introduced Driverseat, a technology for embedding crowds around learning systems for autonomous driving.
+title:         Driverseat
+description:   Research in Autonomous Driving spanning Computer Vision, Artificial Intelligence, and Crowdsourcing. My undergraduate honors research introduced Driverseat, a technology for embedding crowds around learning systems for autonomous driving.
 collaborators: Professor Andrew Ng
 start:         Tue Jan 01 2013 00:00:00 GMT+0400 (GST)
 end:           Sun May 31 2015 00:00:00 GMT+0400 (GST)

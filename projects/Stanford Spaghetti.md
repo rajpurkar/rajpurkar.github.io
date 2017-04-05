@@ -8,5 +8,5 @@ links:
     text: Stanford Spaghetti
     href: https://stanfordspaghetti.com
 group:         apps
-importance:    2
+importance:    1
 ---
