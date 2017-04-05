@@ -10,7 +10,8 @@ mixin projectList(projects)
           - var start = moment(new Date(p.start)).format('MMM YYYY')
           - var end = moment(new Date(p.end)).format('MMM YYYY')
           | From #{start} up to #{end}
-        |  with #{p.collaborators}
+        if p.collaborators
+          |  with #{p.collaborators}
       p #{p.description}
       if p.links
         ul.list-inline
