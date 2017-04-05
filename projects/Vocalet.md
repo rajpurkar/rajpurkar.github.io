@@ -12,5 +12,5 @@ links:
     text: Showcase Video
     href: http://www.youtube.com/embed/LPoLC1uTH9w
 group:         apps
-importance:    1
+importance:    2
 ---
