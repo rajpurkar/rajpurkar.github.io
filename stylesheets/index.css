@@ -1,15 +1,3 @@
-#headingCover {
-  background-color: #4a4a4a;
-  min-height: 100px;
-  display: block;
-}
-#headingCover h2 {
-  color: #fff;
-}
-#headingCover h2 {
-  font-size: 2em;
-  border-bottom: none;
-}
 #rightCover {
   background-color: #fff;
   display: block;
@@ -50,7 +38,7 @@
   color: #999 !important;
 }
 #leftCover .outside-links {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 #leftCover .outside-links li a {
   transition: all 0.5s;
