@@ -5,6 +5,8 @@ block title
 
 block description
   meta(name='description', content='I\'m Pranav Rajpurkar, a PhD student in Stanford\'s Computer Science department. Here I share some of my projects and writings.')
+  if writings
+    meta(name='robots', content='noindex')
 
 block extralinks
   link(rel='stylesheet', href='/stylesheets/index.css')
@@ -33,10 +35,6 @@ block content
                 li
                   a(href="http://dblp.uni-trier.de/pers/hd/r/Rajpurkar:Pranav")
                     i.fa.fa-newspaper-o
-              if writings
-                ul.list-unstyled.inside-links
-                  a(href='/projects').btn.actionBtn
-                    | Projects
     .contentbar
       .cover#rightCover
         .col-lg-8.col-lg-offset-1.col-md-9.col-md-offset-1.col-sm-10.col-sm-offset-1
