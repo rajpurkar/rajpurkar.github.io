@@ -38,7 +38,13 @@ block content
     .contentbar
       .cover#rightCover
         .col-lg-8.col-lg-offset-1.col-md-9.col-md-offset-1.col-sm-10.col-sm-offset-1
+
           if projects
-            +projectList(projects)
+            h1 About
+            p 
+              | I am a Ph.D. student in the 
+              a(href="https://stanfordmlgroup.github.io/") Stanford Machine Learning Group
+              |  where I'm advised by Professor Andrew Ng and Professor Percy Liang. My research focuses on developing machine learning algorithms and applying AI solutions to high-impact problems.
+              +projectList(projects)
           if writings
             +writingList(writings)
