@@ -8,7 +8,7 @@ links:
     text: Project Webpage
     href: https://stanfordmlgroup.github.io/projects/ecg
   - 
-    text: Paper
+    text: Paper (Arxiv)
     href: https://arxiv.org/abs/1707.01836
   - 
     text: Press (Stanford News)
@@ -19,6 +19,9 @@ links:
   -
     text: Video (Stanford)
     href: https://www.youtube.com/watch?v=XVDDEsmbjuE
+  -
+    text: Podcast (Data Skeptic)
+    href: https://www.youtube.com/watch?v=_sh8FkKmKI8
 group:         research
 importance:    6
 ---
