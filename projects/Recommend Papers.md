@@ -6,8 +6,8 @@ start:         Wed Jul 01 2015 00:00:00 GMT+0400 (GST)
 end:           Sat Dec 12 2015 00:00:00 GMT+0400 (GST)
 links: 
   - 
-    text: Recommend-Papers.org
-    href: https://Recommend-Papers.org
+    text: Recommend-Papers
+    href: http://recommend-papers.herokuapp.com/
 group:         apps
 importance:    3
 ---
