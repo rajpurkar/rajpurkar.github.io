@@ -3,6 +3,7 @@ title:         Cardiologist-Level Arrhythmia Detection
 description:   Our deep learning algorithm exceeds the performance of board certified cardiologists in detecting a wide range of heart arrhythmias from electrocardiograms recorded with a single-lead wearable monitor. Dataset 500x larger than previously studied corpora used to train a deep convolutional neural network.
 collaborators: Awni Hannun and Professor Andrew Ng
 start:         Tue Jan 10 2017 00:00:00 GMT+0400 (GST)
+end:           Sat Jul 01 2017 00:00:00 GMT+0400 (GST)
 links:
   - 
     text: Project Webpage
@@ -22,6 +23,11 @@ links:
   -
     text: Podcast (Data Skeptic)
     href: https://www.youtube.com/watch?v=_sh8FkKmKI8
+images:
+  -
+    link: //stanfordmlgroup.github.io/projects/ecg/img/main-figure.svg
+  -
+    link: //stanfordmlgroup.github.io/projects/ecg/img/ecg-annotation.svg
 group:         research
 importance:    6
 ---

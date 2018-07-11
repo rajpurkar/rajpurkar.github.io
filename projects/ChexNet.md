@@ -16,6 +16,11 @@ links:
   - 
     text: Press (IEEE Spectrum)
     href: https://spectrum.ieee.org/the-human-os/biomedical/diagnostics/stanford-algorithm-can-diagnose-pneumonia-better-than-radiologists
+images:
+  - 
+    link: //stanfordmlgroup.github.io/projects/chexnet/img/chest-cam.png
+  - 
+    link: //stanfordmlgroup.github.io/projects/chexnet/img/chest-example.png
 group:         research
 importance:    7
 ---
