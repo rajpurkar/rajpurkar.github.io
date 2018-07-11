@@ -18,3 +18,10 @@ mixin projectList(projects)
           each link in p.links
             li
               a.btn.actionBtn.inverseBtn(href=link.href) #{link.text}
+      if p.images
+        - var num_images = p.images.length
+        - var col_width = Math.floor(12 / num_images)
+        .images.row
+          each image in p.images
+            div(class="col-sm-" + col_width) 
+                img(src=image.link)
