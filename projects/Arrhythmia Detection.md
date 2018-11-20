@@ -28,6 +28,9 @@ images:
     link: //stanfordmlgroup.github.io/projects/ecg/img/main-figure.svg
   -
     link: //stanfordmlgroup.github.io/projects/ecg/img/ecg-annotation.svg
+videos:
+  -
+    link: //www.youtube.com/embed/XVDDEsmbjuE?ecver=1
 group:         research
 importance:    6
 ---
