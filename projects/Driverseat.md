@@ -18,8 +18,10 @@ links:
     text: Paper 2 (Arxiv)
     href: http://arxiv.org/abs/1504.01716
 images:
-  - 
-    link: //cdn.technologyreview.com/i/images/Driverseat.PNG
+  - link: //cdn.technologyreview.com/i/images/Driverseat.PNG
+videos:
+  -
+    link: //www.youtube.com/embed/ftPUAtijOco
 group:         research
 importance:    4
 ---
