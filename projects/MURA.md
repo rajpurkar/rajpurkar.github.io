@@ -9,7 +9,7 @@ links:
     text: Project Webpage
     href: https://stanfordmlgroup.github.io/competitions/mura
   - 
-    text: Paper (Arxiv)
+    text: Paper (MIDL Conference)
     href: https://arxiv.org/abs/1712.06957
 images:
   - 
