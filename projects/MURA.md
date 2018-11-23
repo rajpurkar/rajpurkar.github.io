@@ -13,8 +13,6 @@ links:
     href: https://arxiv.org/abs/1712.06957
 images:
   - 
-    link: //stanfordmlgroup.github.io/competitions/mura/img/dataset.png
-  - 
     link: //stanfordmlgroup.github.io/competitions/mura/img/mura-cam1.svg
 group:         research
 importance:    9
