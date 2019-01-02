@@ -30,7 +30,7 @@ block content
                   a(href="https://twitter.com/pranavrajpurkar")
                     i.fa.fa-twitter
                 li
-                  a(href="https://scholar.google.ae/citations?user=QcOG6sgAAAAJ")
+                  a(href="https://scholar.google.com/citations?user=QcOG6sgAAAAJ")
                     i.fa.fa-mortar-board
                 li
                   a(href="https://github.com/rajpurkar")
@@ -38,13 +38,10 @@ block content
     .contentbar
       .cover#rightCover
         .col-lg-8.col-lg-offset-1.col-md-9.col-md-offset-1.col-sm-10.col-sm-offset-1
-
           if projects
-            h1 About
+            h2 Bio
             p 
-              | I am a Ph.D. student in the 
-              a(href="https://stanfordmlgroup.github.io/") Stanford Machine Learning Group
-              |  where I'm advised by Professor Andrew Ng and Professor Percy Liang. My research focuses on advancing deep learning algorithms for high-impact problems in healthcare and NLP.
+              | I’m a 4th year PhD candidate in the Stanford Machine Learning Group co-advised by Professor Andrew Ng and Professor Percy Liang. I work on the development and deployment of deep learning algorithms for automated diagnosis, prognosis, and treatment of diseases. I have developed models for automated detection of arrhythmias, multiple pathology detection under uncertainty for x-rays (CheXNet, MURA, CheXNeXt), and augmentation of experts in knee MRI interpretation (MRNet). I have also developed SQuAD, a machine reading comprehension dataset.
               +projectList(projects)
           if writings
             +writingList(writings)
