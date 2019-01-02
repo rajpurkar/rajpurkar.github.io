@@ -14,15 +14,6 @@ links:
   - 
     text: Press (Stanford News)
     href: http://news.stanford.edu/2017/07/06/algorithm-diagnoses-heart-arrhythmias-cardiologist-level-accuracy/
-  - 
-    text: Press (MIT Technology Review)
-    href: https://www.technologyreview.com/s/608234/the-machines-are-getting-ready-to-play-doctor/
-  -
-    text: Video (Stanford)
-    href: https://www.youtube.com/watch?v=XVDDEsmbjuE
-  -
-    text: Podcast (Data Skeptic)
-    href: https://www.youtube.com/watch?v=_sh8FkKmKI8
 images:
   -
     link: //stanfordmlgroup.github.io/projects/ecg/img/main-figure.svg
