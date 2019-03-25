@@ -1,0 +1,22 @@
+extends includes/layout
+
+block title
+  title Writings
+
+block description
+  meta(name='robots', content='noindex')
+
+block extralinks
+  link(rel='stylesheet', href='/stylesheets/index.css')
+
+block content
+  section
+    .container
+      .row
+        .col-md-6.col-md-offset-3
+          each w in writings
+            .writing
+              h2 #{w.title} 
+              h4 #{moment(new Date(w.start)).format('MMM YYYY')}
+              p !{w.body}
+
