@@ -1,0 +1,71 @@
+#bibtex_display
+  .if.bibtex_template(style='display: none;')
+    ul
+      li
+        span.if.journal(class="!nolink")
+          a.bibtexVar(href='https://scholar.google.com/scholar?q=+TITLE+', extra='title')
+            span.title
+        .if.author
+          span.author
+          | .
+        div
+          span.if.journal
+            em
+              span.journal
+            | , 
+          span.if.booktitle
+            | In 
+            em
+              span.booktitle
+            | ,
+          span.if.editor
+            span.editor
+            | (editors),
+          span.if.publisher
+            em
+              span.publisher
+            | , 
+          // span.if.number(class='!journal')
+            |  Technical report 
+            span.number
+            | , 
+          span.if.institution
+            span.institution
+            | , 
+          span.if.address
+            span.address
+            | , 
+          span.if.volume
+            span.volume
+            | , 
+          span.if.journal.number
+            | (
+            span.number
+            | ), 
+          span.if.pages
+            | pages 
+            span.pages
+            | , 
+          span.if.month
+            | 
+            span.month
+            | ,
+          span.if.year
+            | 
+            span.year
+            | . 
+          span.if.note
+            span.note
+            | .
+          a.bibtexVar(role='button', data-toggle='collapse', href='#bib+BIBTEXKEY+', aria-expanded='false', aria-controls='bib+BIBTEXKEY+', extra='BIBTEXKEY')
+            | [bib]
+        .bibtexVar.collapse(id='bib+BIBTEXKEY+', extra='BIBTEXKEY')
+          .well
+            pre
+              span.bibtexraw.noread
+        div(style='display:none')
+          span.bibtextype
+        div(style='display:none')
+          span.if.topic
+            span.topic
+

@@ -30,27 +30,13 @@ gulp.task('copy_public', () => {
     .pipe(gulp.dest(build_dir))
 })
 
-gulp.task('markdown-projects', (cb) => {
-  return gulp.src('./projects/**/*.md')
-    .pipe(gutil.buffer())
-    .pipe(markdownToJSON(marked, 'projects.json'))
-    .pipe(gulp.dest(build_dir + 'data/'))
-})
-
-gulp.task('projects', ['markdown-projects'], () => {
+gulp.task('index', () => {
   return gulp.src('./views/index.pug')
-    .pipe(data(() => {
-      const json_file = require(build_dir + 'data/projects.json')
-      return {
-        projects: _.reverse(_.sortBy(_.values(json_file), 'importance')),
-        moment: moment
-      }
-    }))
     .pipe(pug())
-    .pipe(gulp.dest(build_dir + 'projects/'))
+    .pipe(gulp.dest(build_dir))
 })
 
-gulp.task('markdown-writing', ['markdown-projects'], (cb) => {
+gulp.task('markdown-writing', (cb) => {
   return gulp.src('./writings/**/*.md')
     .pipe(gutil.buffer())
     .pipe(markdownToJSON(marked, 'writings.json'))
@@ -58,7 +44,7 @@ gulp.task('markdown-writing', ['markdown-projects'], (cb) => {
 })
 
 gulp.task('writing', ['markdown-writing'], () => {
-  return gulp.src('./views/index.pug')
+  return gulp.src('./views/writing.pug')
     .pipe(data(() => {
       const json_file = require(build_dir + 'data/writings.json')
       return {
@@ -69,20 +55,13 @@ gulp.task('writing', ['markdown-writing'], () => {
       }
     }))
     .pipe(pug())
+	.pipe(rename("index.html"))
     .pipe(gulp.dest(build_dir + 'writings/'))
 })
 
-gulp.task('clean:data', ['writing', 'projects'], function () {
+gulp.task('clean:data', ['writing'], function () {
   return del(build_dir + 'data/')
 })
-
-gulp.task('make_index', ['projects'], () => {
-  return gulp
-    .src(build_dir + 'projects/*')
-    .pipe(gulp.dest(build_dir))
-})
-
-gulp
 
 gulp.task('connect', () => {
   connect.server({
@@ -101,5 +80,5 @@ gulp.task('deploy', () => {
     .pipe(ghPages({branch: 'master'}))
 })
 
-gulp.task('content', ['writing', 'projects'])
-gulp.task('default', ['bower', 'content', 'css', 'copy_public', 'make_index', 'clean:data'])
+gulp.task('content', ['writing'])
+gulp.task('default', ['bower', 'content', 'css', 'copy_public', 'clean:data', 'index'])

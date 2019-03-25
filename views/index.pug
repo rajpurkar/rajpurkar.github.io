@@ -4,44 +4,121 @@ block title
   title Pranav Rajpurkar
 
 block description
-  meta(name='description', content='I\'m Pranav Rajpurkar, a PhD student in Stanford\'s Computer Science department. Here I share some of my projects.')
-  if writings
-    meta(name='robots', content='noindex')
+  meta(name='description', content='I am a 4th year PhD candidate in the Stanford Machine Learning Group co-advised by Andrew Ng and Percy Liang. I am interested in developing and deploying artificial intelligence systems for medical applications, in an effort to augment clinicians and improve healthcare delivery worldwide.')
 
 block extralinks
   link(rel='stylesheet', href='/stylesheets/index.css')
-
-include mixins/projectList
-include mixins/writingList
+  script(type="text/javascript" src="/bibtex-js.js")
+  bibtex(src="/files/my.bib")
 
 block content
-  .outer
-    .sidebar
-      .cover#leftCover
-        .vertical-center
-          .container
-            .row
-              img.media-object.img-circle#me(src="/images/PranavRajpurkar.jpg")
+  section
+    .container
+      .row
+        .col-md-6.col-md-offset-1
+          .media
+            .media-left.media-middle
+              img.media-object#me(src="/images/PranavRajpurkar.jpg")
+            .media-body
               h1 Pranav Rajpurkar
-              h3 PhD student in Computer Science <br> Stanford University
+              h4 PhD candidate in Computer Science
+              h4 Stanford University
               h4 pranavsr@cs.stanford.edu
-              ul.list-inline.outside-links
-                li
-                  a(href="https://twitter.com/pranavrajpurkar")
-                    i.fa.fa-twitter
+              ul.list-inline
                 li
                   a(href="https://scholar.google.com/citations?user=QcOG6sgAAAAJ")
-                    i.fa.fa-mortar-board
+                    | Google Scholar
+                li
+                  a(href="https://twitter.com/pranavrajpurkar")
+                    | Twitter
                 li
                   a(href="https://github.com/rajpurkar")
-                    i.fa.fa-github
-    .contentbar
-      .cover#rightCover
-        .col-lg-8.col-lg-offset-1.col-md-9.col-md-offset-1.col-sm-10.col-sm-offset-1
-          if projects
-            h2 Bio
-            p 
-              | I’m a 4th year PhD candidate in the Stanford Machine Learning Group co-advised by Professor Andrew Ng and Professor Percy Liang. I work on the development and deployment of deep learning algorithms for automated diagnosis, prognosis, and treatment of diseases. I have developed models for automated detection of arrhythmias, multiple pathology detection under uncertainty for x-rays (CheXNet, MURA, CheXNeXt), and augmentation of experts in knee MRI interpretation (MRNet). I have also developed SQuAD, a machine reading comprehension dataset.
-              +projectList(projects)
-          if writings
-            +writingList(writings)
+                    | Github
+          hr
+          .row
+            .col-md-12
+              p I am a 4th year PhD candidate in the Stanford Machine Learning Group co-advised by Andrew Ng and Percy Liang. I am interested in developing and deploying artificial intelligence systems for medical applications, in an effort to augment clinicians and improve healthcare delivery worldwide. I have developed several high-performance ML algorithms for clinical medicine (CheXNet, CheXNeXt, MRNet, arrhythmia), curated large datasets that can facilitate advancements of ML methods (SQuAD, MURA, CheXpert), and led several interdisciplinary research teams as part of the AI for Healthcare Bootcamp at Stanford.
+              p My research has been published in medical journals including Nature Medicine and PLOS Medicine, and CS conferences including ACL (best paper award), EMNLP (best paper award), AAAI and CHI. My work has been covered in the popular press, including Washington Post, The Economist, WIRED, and MIT Technology Review. I’m a Stanford Accel Innovation Scholar ‘18, and a Tau Beta Pi graduate ‘15. Prior to my PhD, I received my B.S. from Stanford in Computer Science with distinction and honors in 2015 and my M.S. also from Stanford in 2018.
+          .row
+            .col-md-12
+              include includes/bib_display
+        .col-md-3
+          h3 Links
+          h4 ML Algorithms For Medicine
+          ul.list-inline
+            li
+              a(href="//stanfordmlgroup.github.io/projects/mrnet/") MRNet
+            li
+              a(href="//stanfordmlgroup.github.io/projects/ecg2/") Arrythmia detection
+            li
+              a(href="//www.ahajournals.org/doi/full/10.1161/CIRCOUTCOMES.118.005010") Blood Pressure Treatment
+            li
+              a(href="//stanfordmlgroup.github.io/projects/chexnext/") CheXNeXt
+            li
+              a(href="//stanfordmlgroup.github.io/projects/chexnet/") CheXNet
+          h4 Datasets For ML Advancements
+          ul.list-inline
+            li
+              a(href="//stanfordmlgroup.github.io/competitions/chexpert/") CheXpert
+            li
+              a(href="//stanfordmlgroup.github.io/competitions/mura/") MURA
+            li
+              a(href="//rajpurkar.github.io/SQuAD-explorer") SQuAD
+          h4 Teaching
+          ul.list-inline
+            li
+              a(href="//stanfordmlgroup.github.io/programs/aihc-bootcamp/") AI for Healthcare Bootcamp
+          h4 App Development
+          ul.list-inline
+            li
+              a(href="//xray4all.com/") XRay4All
+            li
+              a(href="//edusalsa.com/") Edusalsa
+            li
+              a(href="//vocalet.com") Vocalet
+            li
+              a(href="//rajpurkar.github.io/mlx") MLX
+            li
+              a(href="//recommend-papers.herokuapp.com") Recommend-Papers
+          hr
+          h3 In the News
+          h4 ML For Medicine
+          ul.list-inline
+            li
+              a(href="https://www.wsj.com/articles/how-robots-may-make-radiologists-jobs-easier-not-redundant-1511368729") The Wall Street Journal
+            li
+              a(href="https://www.technologyreview.com/s/608234/the-machines-are-getting-ready-to-play-doctor/") MIT Tech Review
+            li
+              a(href="https://www.economist.com/science-and-technology/2018/06/07/artificial-intelligence-will-improve-medical-treatments") The Economist
+          h4 ML For Question Answering
+          ul.list-inline
+            li
+              a(href="https://www.washingtonpost.com/business/economy/ais-ability-to-read-hailed-as-historical-milestone-but-computers-arent-quite-there/2018/01/16/04638f2e-faf6-11e7-a46b-a3614530bd87_story.html") Washington Post
+            li
+              a(href="https://www.theverge.com/2018/1/17/16900292/ai-reading-comprehension-machines-humans") The Verge
+            li
+              a(href="https://www.wired.com/story/ai-beat-humans-at-reading-maybe-not/") Wired
+            li 
+          hr
+          h3 Videos
+          h4 Recent Talks
+          .row
+            .col-sm-12
+              iframe(width="100%", height='200px', src="//www.youtube.com/embed/IM9ANAbufYM?ecver=1",frameborder="0",allow="autoplay; encrypted-media",allowfullscreen)
+              iframe(width="100%", height='200px', src="//www.youtube.com/embed/IkngsvWgfiQ?ecver=1",frameborder="0",allow="autoplay; encrypted-media",allowfullscreen)
+          h4 ML For Medicine
+          .row
+            .col-sm-12
+              iframe(width="100%", height='200px', src="//www.youtube.com/embed/VJRCj-4E2iU?ecver=1",frameborder="0",allow="autoplay; encrypted-media",allowfullscreen)
+              iframe(width="100%", height='200px', src="//www.youtube.com/embed/XVDDEsmbjuE?ecver=1",frameborder="0",allow="autoplay; encrypted-media",allowfullscreen)
+          hr
+          h3 Twitter
+          div(style="max-height: 1000px;")
+            a(class="twitter-timeline" data-height="800" href="https://twitter.com/pranavrajpurkar?ref_src=twsrc%5Etfw")
+              | Tweets by pranavrajpurkar
+            script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")
+
+  .bibtex_structure
+    .group.year(extra='DESC number')
+      .sort.journal(extra='DESC string')
+        .templates
