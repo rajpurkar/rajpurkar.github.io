@@ -1,67 +1,9 @@
-#rightCover {
-  background-color: #fff;
-  display: block;
+section {
+  padding: 30px 0px;
 }
-#rightCover .extra-padding {
-  padding: 20px 30px;
-}
-#rightCover .project,
-#rightCover .writing {
-  padding: 10px 0px;
-}
-#rightCover .project ul.list-inline li a,
-#rightCover .writing ul.list-inline li a {
-  font-size: 1em;
-  margin: 5px 0px;
-}
-#rightCover .project .images,
-#rightCover .writing .images {
-  padding: 20px 0px;
-}
-#rightCover .project .images img,
-#rightCover .writing .images img {
-  width: 100%;
-}
-#leftCover {
-  padding: 0px;
-  background-color: #f5f5f5;
-}
-#leftCover .inside-links {
-  margin: 15px;
-}
-#leftCover .inside-links li.active a,
-#leftCover .inside-links li a:hover {
-  background-color: #3985d5;
-  color: #fff !important;
-  outline: none;
-}
-#leftCover .inside-links li a {
-  border-radius: 0px;
-  background: none;
-  border: none;
-  outline: 1px solid #aaa;
-  font-size: 1.4em;
-  max-width: 200px;
-  margin: 5px auto;
-  color: #999 !important;
-}
-#leftCover .outside-links {
-  margin-top: 10px;
-}
-#leftCover .outside-links li a {
-  transition: all 0.5s;
-  color: #666;
-}
-#leftCover .outside-links li a i.fa {
-  font-size: 2em;
-}
-#leftCover .outside-links li a:hover {
-  color: #333;
-}
-#leftCover img#me {
+img#me {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  max-width: 200px;
+  max-width: 150px;
 }
