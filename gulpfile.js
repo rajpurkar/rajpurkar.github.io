@@ -43,6 +43,13 @@ gulp.task('markdown-writing', (cb) => {
     .pipe(gulp.dest(build_dir + 'data/'))
 })
 
+gulp.task('bio', () => {
+  return gulp.src('./views/bio.pug')
+    .pipe(pug())
+	.pipe(rename("index.html"))
+    .pipe(gulp.dest(build_dir + 'bio/'))
+})
+
 gulp.task('writing', ['markdown-writing'], () => {
   return gulp.src('./views/writing.pug')
     .pipe(data(() => {
@@ -81,4 +88,4 @@ gulp.task('deploy', () => {
 })
 
 gulp.task('content', ['writing'])
-gulp.task('default', ['bower', 'content', 'css', 'copy_public', 'clean:data', 'index'])
+gulp.task('default', ['bower', 'content', 'css', 'copy_public', 'clean:data', 'index', 'bio'])
