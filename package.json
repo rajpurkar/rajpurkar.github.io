@@ -6,17 +6,20 @@
     "bower": "^1.7.9",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
-    "gulp-bower": "0.0.13",
-    "gulp-connect": "^5.0.0",
+    "gulp-bower": "0.0.15",
+    "gulp-connect": "^5.7.0",
     "gulp-data": "^1.2.1",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-markdown-to-json": "^1.0.3",
+    "gulp-markdown-to-json": "^1.1.0",
     "gulp-pug": "^3.0.4",
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "^2.5.0",
     "gulp-util": "^3.0.7",
-    "lodash": "^4.15.0",
-    "marked": "^0.3.6",
-    "moment": "^2.14.1"
+    "lodash": "^4.17.11",
+    "marked": "^0.6.2",
+    "moment": "^2.24.0"
+  },
+  "dependencies": {
+    "n": "^4.1.0"
   }
 }
