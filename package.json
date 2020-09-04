@@ -16,7 +16,7 @@
     "gulp-stylus": "^2.5.0",
     "gulp-util": "^3.0.7",
     "lodash": "^4.17.11",
-    "marked": "^0.6.2",
+    "marked": "^0.7.0",
     "moment": "^2.24.0"
   },
   "dependencies": {
