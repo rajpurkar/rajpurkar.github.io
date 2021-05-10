@@ -15,7 +15,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "^2.5.0",
     "gulp-util": "^3.0.7",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "marked": "^0.6.2",
     "moment": "^2.24.0"
   },
