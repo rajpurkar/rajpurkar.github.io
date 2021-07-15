@@ -1,12 +1,8 @@
-@media (min-width: 991px) {
-  #leftCol {
-    text-align: right;
-  }
-}
 img#me {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
+  border-radius: 100%;
 }
 .bibtexentry > ul {
   list-style: none;
@@ -14,4 +10,28 @@ img#me {
 }
 .bibtexentry > ul li {
   margin-bottom: 10px;
+}
+#topsection {
+  background: #a51c30;
+}
+#topsection h1,
+#topsection h2,
+#topsection h3,
+#topsection h4,
+#topsection p,
+#topsection a {
+  color: #fff;
+}
+#linkssection {
+  background: #1e1e1e;
+}
+#linkssection a {
+  color: #fff;
+  text-decoration: underline;
+}
+#biosection {
+  background: #dedede;
+}
+#vidsection {
+  background: #efefef;
 }
