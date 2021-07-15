@@ -12,132 +12,86 @@ block extralinks
   bibtex(src="/files/my.bib")
 
 block content
-  section
-    .container-fluid
+  section#topsection
+    .container
       .row
-        .col-md-10.col-md-offset-1
+        .col-xs-12
           .row
-            .col-sm-7
+            .col-xs-3
               img#me(src="/images/PranavRajpurkar.jpg")
+            .col-xs-9
               h1 Pranav Rajpurkar
-              // h4 I am currently on the academic job market (2020-2021)
-              h5 <b>News!</b> I'll be joining as an Assistant Professor at Harvard in the Department of Biomedical Informatics later this year.
-              // h4 Stanford University
-              p pranavsr@cs.stanford.edu
-              ul.list-inline
-                li
-                  a(href="https://scholar.google.com/citations?user=QcOG6sgAAAAJ")
-                    h5 Google Scholar
-                li
-                  a(href="https://twitter.com/pranavrajpurkar")
-                    h5 Twitter
-                li
-                  a(href="https://github.com/rajpurkar")
-                    h5 GitHub
-              p My research is driven by a fundamental passion for building reliable artificial intelligence (AI) technologies for medical decision making. I approach problems in clinical medicine with a computational lens, developing AI algorithms and datasets across computer vision, natural language processing, and structured data that can drive AI technologies to support medical decision making.
-              p My research has been published in 33 peer-reviewed publications in both scientific journals (Nature Medicine) and AI conferences (AAAI), receiving 7,700+ citations. My work has been covered by media outlets including NPR, The Washington Post, and WIRED. I founded the AI for Healthcare Bootcamp at Stanford, where I have closely worked with and mentored 115 Stanford students and collaborated with 18 faculty members on various research projects. I have received the NIH NHLBI BioData Catalyst Fellowship for 2020-2021. I write a AI+Medicine research newsletter with Dr. Eric Topol called Doctor Penguin which has  4,000+ readers, and co-host a podcast called The AI Health Podcast. I designed and instructed the Coursera course series on AI for Medicine, now with 40,000+ students.
-              p My PhD was advised by Dr. Andrew Ng and Dr. Percy Liang at Stanford University, where I also received both my Bachelors and Masters Degrees in Computer Science.
-              h3 Papers
-              include includes/bib_display
-            .col-sm-5
-              .row
-                .col-sm-6
-                  h4 Research
-                  ul.list-unstyled
-                    li
-                      a(href="//arxiv.org/abs/2101.06871") CheXtransfer
-                    li
-                      a(href="//arxiv.org/abs/2010.05352") MoCo CXR
-                    li
-                      a(href="//arxiv.org/abs/2009.08123") DLBCL-Morph
-                    li
-                      a(href="//arxiv.org/abs/2007.06199") CheXphoto
-                    li
-                      a(href="//www.nature.com/articles/s41746-020-00322-2") CheXaid
-                    li
-                      a(href="//arxiv.org/abs/2004.09167") CheXbert
-                    li
-                      a(href="//www.nature.com/articles/s41598-020-61055-6") AppendiXNet
-                    li
-                      a(href="//stanfordmlgroup.github.io/projects/chexpedition/") CheXpedition
-                    li
-                      a(href="//nature.com/articles/s41746-020-0232-8") Liver Cancer
-                    li
-                      a(href="//jamanetwork.com/journals/jamanetworkopen/fullarticle/2735471") HeadXNet
-                    li
-                      a(href="//stanfordmlgroup.github.io/projects/mrnet/") MRNet
-                    li
-                      a(href="//stanfordmlgroup.github.io/projects/ecg2/") Arrythmia detection
-                    li
-                      a(href="//www.ahajournals.org/doi/full/10.1161/CIRCOUTCOMES.118.005010") HTE Estimation
-                    li
-                      a(href="//xray4all.com/") XRay4All
-                    li
-                      a(href="//stanfordmlgroup.github.io/projects/chexnext/") CheXNeXt
-                    li
-                      a(href="//stanfordmlgroup.github.io/projects/chexnet/") CheXNet
-                    li
-                      a(href="//rajpurkar.github.io/SQuAD-explorer") SQuAD
-                    li
-                      a(href="//stanfordmlgroup.github.io/competitions/chexpert/") CheXpert
-                    li
-                      a(href="//stanfordmlgroup.github.io/competitions/mura/") MURA
-                    // li
-                    //   a(href="//edusalsa.com/") Edusalsa
-                .col-sm-6
-                  h4 Community
-                  ul.list-unstyled
-                    li
-                      a(href="//theaihealthpodcast.com/") The AI Health Podcast
-                    l
-                      a(href="//www.coursera.org/specializations/ai-for-medicine/") AI for Medicine Coursera
-                    li
-                      a(href="//stanfordmlgroup.github.io/programs/aihc-bootcamp/") AI for Healthcare Bootcamp
-                    li
-                      a(href="//doctorpenguin.com/") Doctor Penguin
-                  h4 News
-                  ul.list-unstyled
-                    li
-                      a(href="https://www.npr.org/sections/health-shots/2019/04/01/708085617/how-can-doctors-be-sure-a-self-taught-computer-is-making-the-right-diagnosis") NPR
-                    li
-                      a(href="https://www.wsj.com/articles/how-robots-may-make-radiologists-jobs-easier-not-redundant-1511368729") The Wall Street Journal
-                    li
-                      a(href="https://www.technologyreview.com/s/608234/the-machines-are-getting-ready-to-play-doctor/") MIT Tech Review
-                    li
-                      a(href="https://www.economist.com/science-and-technology/2018/06/07/artificial-intelligence-will-improve-medical-treatments") The Economist
-                    li
-                      a(href="https://www.washingtonpost.com/business/economy/ais-ability-to-read-hailed-as-historical-milestone-but-computers-arent-quite-there/2018/01/16/04638f2e-faf6-11e7-a46b-a3614530bd87_story.html") Washington Post
-                    li
-                      a(href="https://www.theverge.com/2018/1/17/16900292/ai-reading-comprehension-machines-humans") The Verge
-                    li
-                      a(href="https://www.wired.com/story/ai-beat-humans-at-reading-maybe-not/") WIRED
-              hr
-              h3 Coursera
-              .row
-                .col-sm-12
-                  iframe(width="100%", height='200px', src="//www.youtube.com/embed/zGFKSQlef_0?ecver=1",frameborder="0",allow="autoplay; encrypted-media",allowfullscreen)
-              h3 The AI Health Podcast
-              .row
-                .col-sm-12
-                  iframe(width="100%", height="700px", frameborder="no", scrolling="no", seamless, src="https://player.simplecast.com/2e18c3df-6731-4f33-b4d3-952edd86ce00?dark=false&show=true")
-              h3 Talks
-              .row
-                .col-sm-12
-                  iframe(width="100%", height='200px', src="//www.youtube.com/embed/IM9ANAbufYM?ecver=1",frameborder="0",allow="autoplay; encrypted-media",allowfullscreen)
-                  iframe(width="100%", height='200px', src="//www.youtube.com/embed/IkngsvWgfiQ?ecver=1",frameborder="0",allow="autoplay; encrypted-media",allowfullscreen)
-              hr
-              h3 Research Videos
-              .row
-                .col-sm-12
-                  iframe(width="100%", height='200px', src="//www.youtube.com/embed/VJRCj-4E2iU?ecver=1",frameborder="0",allow="autoplay; encrypted-media",allowfullscreen)
-                  iframe(width="100%", height='200px', src="//www.youtube.com/embed/XVDDEsmbjuE?ecver=1",frameborder="0",allow="autoplay; encrypted-media",allowfullscreen)
-                  iframe(width="100%", height='200px', src="https://www.youtube.com/embed/X81nBdKvl7s?ecver=1",frameborder="0",allow="autoplay; encrypted-media",allowfullscreen)
-              hr
-              div(style="max-height: 600px; width:100%;")
-                a(class="twitter-timeline" data-height="600" href="https://twitter.com/pranavrajpurkar?ref_src=twsrc%5Etfw")
-                  | Tweets by pranavrajpurkar
-                script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")
-        .bibtex_structure
-          .group.year(extra='DESC number')
-            .sort.journal(extra='DESC string')
-              .templates
+              h4 Assistant Professor of Biomedical Informatics
+              h4 Harvard Medical School
+              p Pranav_Rajpurkar@hms.harvard.edu
+  section#linkssection
+    .container
+      .row
+        .col-md-12
+            ul.list-inline
+              li
+                a(href="https://twitter.com/pranavrajpurkar")
+                  h5 Twitter
+              li
+                a(href="https://scholar.google.com/citations?user=QcOG6sgAAAAJ")
+                  h5 GScholar
+              li
+                a(href="https://github.com/rajpurkar")
+                  h5 GitHub
+              li
+                  h5 //
+              li
+                a(href="//theaihealthpodcast.com/")
+                  h5 The AI Health Podcast
+              li
+                a(href="//stanfordmlgroup.github.io/programs/aihc-bootcamp/")
+                  h5 AI for Healthcare Bootcamp
+              li
+                a(href="//doctorpenguin.com/")
+                  h5 Doctor Penguin
+              li
+                a(href="//www.coursera.org/specializations/ai-for-medicine/")
+                  h5 AI for Medicine Coursera
+  section#biosection
+    .container
+      .row
+        .col-md-9
+          p My goal is to build reliable artificial intelligence (AI) technologies for medical decision making. I approach problems in clinical medicine with a computational lens, developing AI algorithms and datasets across computer vision, natural language processing, and structured data that can drive AI technologies to support medical decision making.
+  section#vidsection
+    .container
+      .row
+        .col-md-6
+            h3 The AI Health Podcast
+            .row
+              .col-sm-12
+                iframe(width="100%", height="700px", frameborder="no", scrolling="no", seamless, src="https://player.simplecast.com/2e18c3df-6731-4f33-b4d3-952edd86ce00?dark=false&show=true")
+            hr
+            h3 Coursera Course
+            .row
+              .col-sm-12
+                iframe(width="100%", height='300px', src="//www.youtube.com/embed/zGFKSQlef_0?ecver=1",frameborder="0",allow="autoplay; encrypted-media",allowfullscreen)
+            // div(style="max-height: 600px; width:100%;")
+            //   a(class="twitter-timeline" data-height="600" href="https://twitter.com/pranavrajpurkar?ref_src=twsrc%5Etfw")
+            //     | Tweets by pranavrajpurkar
+            //   script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")
+        .col-md-6
+            h3 Recent Talk
+            .row
+              .col-sm-12
+                iframe(width="100%", height='300px', src="//www.youtube.com/embed/PazX2Nzfo8w?ecver=1",frameborder="0",allow="autoplay; encrypted-media",allowfullscreen)
+            hr
+            h3 Research Videos
+            .row
+              .col-sm-12
+                iframe(width="100%", height='300px', src="//www.youtube.com/embed/VJRCj-4E2iU?ecver=1",frameborder="0",allow="autoplay; encrypted-media",allowfullscreen)
+                iframe(width="100%", height='300px', src="//www.youtube.com/embed/XVDDEsmbjuE?ecver=1",frameborder="0",allow="autoplay; encrypted-media",allowfullscreen)
+  section
+    .container
+      .row
+        .col-md-9
+          h3 Papers
+          include includes/bib_display
+          .bibtex_structure
+            .group.year(extra='DESC number')
+              .sort.journal(extra='DESC string')
+                .templates
